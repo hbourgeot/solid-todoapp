@@ -1,0 +1,120 @@
+.App {
+  width: min(600px, 85%);
+  margin: 0 auto;
+}
+
+.header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.input {
+  border: 2px solid #bbb;
+  border-radius: 6px;
+  background-color: inherit;
+  font-family: Arial;
+  font-size: 18px;
+  margin: 6px 0px 12px;
+  padding: 12px 10px;
+  outline: 0;
+  color: white;
+}
+
+.btnPrimary {
+  background-color: #a0a4d9;
+  border: 1px solid #a0a4d9;
+  border-radius: 5px;
+  color: #1f2023;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 6px auto 12px;
+  padding: 12px 20px;
+  text-align: center;
+}
+
+.inputField {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  border: 2px solid darken(#fff, 50%);
+  list-style-type: none;
+  justify-content: space-between;
+  margin: 0 0 12px;
+  padding: 12px 24px;
+  gap: 10px;
+}
+.title {
+  word-break: break-all;
+}
+
+.button {
+  border-radius: 6px;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  padding: 6px;
+  text-align: center;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.task_done {
+  text-decoration: line-through;
+}
+
+.btns {
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+.done {
+  background-color: #080;
+}
+
+.done:hover,
+.done.checked {
+  background-color: lighten(#080, 20%);
+}
+
+.remove {
+  background-color: #800;
+}
+
+.remove:hover {
+  background-color: lighten(#800, 20%);
+}
+
+.ul {
+  padding: 10px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
